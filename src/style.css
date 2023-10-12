@@ -5,6 +5,20 @@ body {
     background-color: orange;
 }
 
+header {
+    background-color: yellow;
+    color: orangered;
+}
+
+header ul {
+    list-style: none;
+    padding: 5px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
 #content {
     background: url("./pizza.jpeg");
     padding: 10px;
@@ -12,5 +26,5 @@ body {
 
 #content * {
     background-color: red;
-    padding: 5px;
+    padding: 10px 5px;
 }
