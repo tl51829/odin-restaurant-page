@@ -3,6 +3,9 @@ body {
 
     color: white;
     background-color: orange;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -13,18 +16,40 @@ header {
 header ul {
     list-style: none;
     padding: 5px 0;
+    font-weight: bold;
 
     display: flex;
     justify-content: center;
     gap: 5vw;
 }
 
+header li {
+    background-color: orange;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
 #content {
     background: url("./pizza.jpeg");
-    padding: 10px;
+    padding: 25px 10px;
 }
 
 #content * {
     background-color: red;
-    padding: 10px 5px;
+    padding: 10px;
+}
+
+#content :has(img) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content img {
+    width: 400px;
+}
+
+#content img ~ :is(h1, h2, p) {
+    margin: 0;
+    padding: 0;
 }
