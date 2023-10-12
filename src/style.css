@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+
+    color: white;
+    background-color: orange;
+}
+
+#content {
+    background: url("./pizza.jpeg");
+    padding: 10px;
+}
+
+#content * {
+    background-color: red;
+    padding: 5px;
+}
